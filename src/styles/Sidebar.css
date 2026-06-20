@@ -1,0 +1,36 @@
+.sidebar{
+
+    width:220px;
+    height:calc(100vh - 70px);
+
+    background:white;
+
+    border-right:1px solid #ddd;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+    padding:20px;
+
+}
+
+.sidebar li{
+
+    padding:18px 10px;
+
+    cursor:pointer;
+
+    color:#3f4f63;
+
+}
+
+.sidebar li:hover{
+
+    background:#f3f6fb;
+
+    border-radius:8px;
+
+}
