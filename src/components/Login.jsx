@@ -136,13 +136,13 @@ function Login() {
                             Remember Me
                         </span>
 
+                        <button type="button">
+                            Forgot Password
+                        </button>
                     </div>
 
                 </div>
 
-                <button type="button">
-                    Forgot Password
-                </button>
 
                 <button
                     className="login-btn"
