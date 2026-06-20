@@ -138,11 +138,11 @@ function Login() {
 
                     </div>
 
-                    <a href="#">
-                        Forgot Password?
-                    </a>
-
                 </div>
+
+                <button type="button">
+                    Forgot Password
+                </button>
 
                 <button
                     className="login-btn"
