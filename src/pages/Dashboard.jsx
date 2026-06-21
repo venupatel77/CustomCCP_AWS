@@ -1,30 +1,35 @@
+import { useState } from "react";
 import Header from "../components/Header";
+import HomeContent from "../components/HomeContent";
+import AgentCall from "../components/AgentCall";
 import "../styles/Dashboard.css";
 
 function Dashboard() {
 
+    const [activeScreen, setActiveScreen] = useState("home");
+
     return (
+        <div className="dashboard">
 
-        <div>
-
-            <Header/>
+            <Header
+                setActiveScreen={setActiveScreen}
+                activeScreen={activeScreen}
+            />
 
             <div className="dashboard-container">
 
-                <h1>Amazon Connect CCP</h1>
+                {activeScreen === "home" && (
+                    <HomeContent />
+                )}
 
-                <h2>Welcome Agent</h2>
-
-                <div className="contacts-card">
-                    No Active Contacts
-                </div>
+                {activeScreen === "call" && (
+                    <AgentCall />
+                )}
 
             </div>
 
         </div>
-
     );
-
 }
 
 export default Dashboard;

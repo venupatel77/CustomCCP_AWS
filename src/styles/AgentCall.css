@@ -1,0 +1,162 @@
+.agent-call-container {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.dialer-card {
+    width: 100%;
+    max-width: 750px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.dialer-card h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #1f2937;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.country-select {
+    width: 200px;
+}
+
+.country-select,
+.phone-input,
+.quick-connect {
+    height: 45px;
+    border: 1px solid #d8dce5;
+    border-radius: 8px;
+    padding: 0 12px;
+    font-size: 14px;
+    outline: none;
+}
+
+.country-select:focus,
+.phone-input:focus,
+.quick-connect:focus {
+    border-color: #2563eb;
+}
+
+.phone-input {
+    flex: 1;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.quick-connect-section {
+    margin-bottom: 20px;
+}
+
+.quick-connect-section label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.quick-connect {
+    width: 100%;
+}
+
+.dialpad {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.dialpad button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    background: #f3f5f8;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.dialpad button:hover {
+    background: #e7ecf3;
+    transform: scale(1.05);
+}
+
+.dialpad button:active {
+    transform: scale(0.96);
+}
+
+.dialpad button {
+    font-size: 28px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.dialpad button span {
+    font-size: 10px;
+    font-weight: 600;
+    color: #6b7280;
+    letter-spacing: 1px;
+    margin-top: 1px;
+}
+
+.call-actions {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 10px;
+}
+
+.clear-btn,
+.call-btn,
+.end-btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.2s ease;
+}
+
+.clear-btn:hover,
+.call-btn:hover,
+.end-btn:hover {
+    transform: scale(1.08);
+}
+
+.clear-btn {
+    background: #e5e7eb;
+    color: #111827;
+}
+
+.call-btn {
+    background: #16a34a;
+    color: white;
+}
+
+.end-btn {
+    background: #dc2626;
+    color: white;
+}

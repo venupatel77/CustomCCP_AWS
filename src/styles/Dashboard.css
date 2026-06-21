@@ -5,7 +5,8 @@ body{
 }
 
 .dashboard-container{
-    padding:30px;
+    padding:0px;
+    margin:0px;
 }
 
 .contacts-card{

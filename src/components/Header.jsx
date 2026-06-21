@@ -2,7 +2,7 @@ import "../styles/Header.css";
 import { useState } from "react";
 import { FaPhoneAlt, FaComments, FaCog } from "react-icons/fa";
 
-function Header() {
+function Header({ setActiveScreen, activeScreen }) {
 
     const agentName = localStorage.getItem("agentName") || "John Doe";
 
@@ -22,7 +22,6 @@ function Header() {
     };
 
     return (
-
         <header className="header">
 
             <div className="header-left">
@@ -45,22 +44,37 @@ function Header() {
 
             <div className="header-right">
 
-                <FaPhoneAlt className="icon" />
+                {/* Phone Icon */}
+                <FaPhoneAlt
+                    className={`icon ${activeScreen === "call" ? "active-icon" : ""}`}
+                    onClick={() => setActiveScreen("call")}
+                    title="Phone"
+                />
 
-                <FaComments className="icon" />
+                {/* Chat/Home Icon */}
+                <FaComments
+                    className={`icon ${activeScreen === "home" ? "active-icon" : ""}`}
+                    onClick={() => setActiveScreen("home")}
+                    title="Chat"
+                />
 
-                <FaCog className="icon" />
+                {/* Settings */}
+                <FaCog
+                    className="icon"
+                    title="Settings"
+                />
 
                 <div className="profile">
                     {agentName.charAt(0).toUpperCase()}
                 </div>
 
-                <span>{agentName}</span>
+                <span className="agent-name">
+                    {agentName}
+                </span>
 
             </div>
 
         </header>
-
     );
 }
 

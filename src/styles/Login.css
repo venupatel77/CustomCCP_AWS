@@ -1,133 +1,157 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-  background: #f4f5f8;
+    background: #f4f5f8;
 }
 
 .container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .login-card {
-  width: 420px;
-  background: white;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    width: 420px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
 }
+
+/* Logo */
 
 .logo {
-  text-align: center;
-  font-size: 45px;
-  margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
+.logo-image {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+}
+
+/* Heading */
+
 h2 {
-  text-align: center;
-  margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .subtitle {
-  text-align: center;
-  color: gray;
-  margin-bottom: 25px;
+    text-align: center;
+    color: gray;
+    margin-bottom: 25px;
 }
 
+/* Inputs */
+
 .input-group {
-  margin-bottom: 18px;
+    margin-bottom: 18px;
 }
 
 label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
 }
 
-/* Username and Password Inputs */
 input[type="text"],
 input[type="password"] {
-  width: 100%;
-  padding: 12px 45px 12px 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  outline: none;
+    width: 100%;
+    padding: 12px 45px 12px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
 }
 
 input[type="text"]:focus,
 input[type="password"]:focus {
-  border-color: #2563eb;
+    border-color: #2563eb;
 }
 
-/* Password Container */
+/* Password Box */
+
 .password-box {
-  position: relative;
+    position: relative;
 }
 
-/* Eye Icon */
 .eye-icon {
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: gray;
-  cursor: pointer;
-  font-size: 18px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 .eye-icon:hover {
-  color: #2563eb;
+    color: #2563eb;
 }
 
+/* Remember + Forgot Password */
+
 .options {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 25px;
-  font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
 .remember {
-  display: flex;
-  align-items: center;
-  gap: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-.options a {
-  color: #2563eb;
-  text-decoration: none;
+.remember-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.options a:hover {
-  text-decoration: underline;
+.forgot-password {
+    color: #2563eb;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
 }
 
-button {
-  width: 100%;
-  background: #2563eb;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
+.forgot-password:hover {
+    text-decoration: underline;
 }
 
-button:hover {
-  background: #1d4ed8;
+/* Login Button */
+
+.login-btn {
+    width: 100%;
+    background: #2563eb;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
 }
+
+.login-btn:hover {
+    background: #1d4ed8;
+}
+
+/* Footer */
 
 .footer {
-  margin-top: 20px;
-  color: gray;
-  font-size: 14px;
+    margin-top: 20px;
+    color: gray;
+    font-size: 14px;
 }

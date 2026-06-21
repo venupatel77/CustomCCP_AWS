@@ -42,14 +42,24 @@
     color: white;
 }
 
+/* Icons */
+
 .icon {
     cursor: pointer;
     font-size: 18px;
-    transition: 0.2s;
+    transition: all 0.25s ease;
 }
 
 .icon:hover {
     color: #74b9ff;
+    transform: scale(1.1);
+}
+
+/* Active Screen Icon */
+
+.active-icon {
+    color: #74b9ff;
+    transform: scale(1.2);
 }
 
 /* Agent Avatar */
@@ -67,6 +77,7 @@
     font-size: 15px;
 }
 
-.header-right span {
+.agent-name {
     font-size: 15px;
+    font-weight: 500;
 }

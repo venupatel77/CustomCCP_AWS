@@ -2,6 +2,7 @@ import "../styles/Login.css";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import agentIcon from "../assets/agent-icon.png";
 
 function Login() {
 
@@ -70,7 +71,11 @@ function Login() {
             <div className="login-card">
 
                 <div className="logo">
-                    🎧
+                    <img
+                        src={agentIcon}
+                        alt="Agent Icon"
+                        className="logo-image"
+                    />
                 </div>
 
                 <h2>CCP Agent Login</h2>
@@ -130,19 +135,21 @@ function Login() {
 
                     <div className="remember">
 
-                        <input type="checkbox" />
+                        <div className="remember-left">
+                            <input type="checkbox" />
+                            <span>Remember Me</span>
+                        </div>
 
-                        <span>
-                            Remember Me
+                        <span
+                            className="forgot-password"
+                            onClick={() => navigate("/forgot-password")}
+                        >
+                            Forgot Password?
                         </span>
 
-                        <button type="button">
-                            Forgot Password
-                        </button>
                     </div>
 
                 </div>
-
 
                 <button
                     className="login-btn"
